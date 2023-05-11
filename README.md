@@ -1,1 +1,14 @@
-# test
+# README #
+Esto es un repositorio de...
+
+###  NOMBRE Y APELLIDO: ###
+SALVA MATIAS
+
+### MATERIA ###
+TALLER DE INGENERIA DE SOFTWARE
+
+### CURSO ###
+7ª2
+
+### COLEGIO ###
+COLEGIO TECNICO PROVINCIAL "OLGA B. DE ARKO"
