@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    margin:0;
+}
+.Header{
+    background-color: #9CF0DC;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Header img{
+    height: 70px;
+}
+.Links{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: space-around;
+}
+.Contenedor{
+    background-color: #9FEEDB;
+    flex:1;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#7CF5F1;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+.Formulario label{
+    margin: 5px;
+    width: 100%;
+}
+
+.Formulario label input, select{
+    width: 100%;
+}
+.Botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Boton{
+    padding: 10px 15px;
+    margin:5px;
+    background-color: limegreen;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.Eliminar{
+    background-color: red;
+
+
+
+}
+#personas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Persona{
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    margin:Spx;
+    padding:10px;
+    border-radius:10px;
+    background-color:white;
+}
+.persona span {
+    margin:10px 20px;
+
+}
+.EliminarPersona{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.Footer{
+    background-color: #9CF0DC;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Footer img{
+    height: 40px;
+}
+.Footer a{
+    margin:0 15px;
+}
