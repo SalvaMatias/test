@@ -1,4 +1,4 @@
-let materias = []
+/*let materias = []
 
 function eliminar(){
     document.getElementById("materia").value = "";
@@ -84,7 +84,7 @@ function borrarTabla(){
     }
 }
 
-function mostrarOcultar(){
+function Crear(){
     let formularioDiv = document.getElementById('formularioDiv');
     let tablaDiv = document.getElementById('tablaDiv');
     //SI SE MUESTRA EL FORMULARIO
@@ -101,9 +101,9 @@ function mostrarOcultar(){
         tablaDiv.classList.toggle("displayNone");
         formularioDiv.classList.remove("displayNone")
         formularioDiv.classList.toggle("formulario");
-        borrarTabla();
-    }
-}
+        borrarTabla();*/
+  /*  }
+}*/
 
 /* Shorthands para comentar en Visual Studio Code:
 Comentar una línea de código:
@@ -115,11 +115,23 @@ Comentar múltiples líneas de código:
 En Windows/Linux: Selecciona las líneas y presiona Shift + Alt + A.
 */
 
-
-
-
-
-
-
-
+function Crear(){
+    let formularioDiv = document.getElementById('login');
+    let tablaDiv = document.getElementById('tablaDiv');
+    //SI SE MUESTRA EL FORMULARIO
+    if (formularioDiv.classList.contains("formulario")){
+        formularioDiv.classList.remove("formulario")
+        formularioDiv.classList.toggle("displayNone");
+        tablaDiv.classList.remove("displayNone");
+        tablaDiv.classList.toggle("tablaDiv");
+        crearTabla();
+    }
+    else if (formularioDiv.classList.contains("displayNone")){
+        tablaDiv.classList.remove("tablaDiv")
+        tablaDiv.classList.toggle("displayNone");
+        formularioDiv.classList.remove("displayNone")
+        formularioDiv.classList.toggle("formulario");
+        borrarTabla();
+    }
+}
 

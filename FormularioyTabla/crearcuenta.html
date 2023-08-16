@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+/*<html>
 	<head>
 		<script src="./main.js"></script>
 		<link rel="stylesheet" href="./style.css">
@@ -18,17 +18,29 @@
 		<div class="contenedor">
 			<div class="formulario" id="formularioDiv">
 				<form class="form" id="form">
-					<label> Usuario: 
-					<input id="user" type="text" placeholder="user">
+					<label> Materia: 
+					<input id="materia" type="text" placeholder="Materia">
 					</label>
-					<label> Pasword: 
-						<input id="pas" type="password" placeholder="pas">
+					<label> Docente: 
+						<input id="docente" type="text" placeholder="Docente">
 					</label>
+					<label> Curso:
+						<input id="curso"type="text" placeholder="Curso">
+					</label>
+					<label> Horario: 
+						<input id="horario" type="text" placeholder="Horario">
+					</label>
+					<div id="divNotas">
+						<label> Notas: 
+							<input id="nota" class="nota" type="text" placeholder="Nota">
+						</label>
+					</div>
 				</form>
 				<div class="botones">
-					<span class="boton" onclick="Login()">Log</span>
-					<span class="boton" onclick="Crear()">Crear</span>
-					
+					<span class="boton" onclick="guardarDatos()">Guardar</span>
+					<span class="boton" onclick="eliminar()">Eliminar</span>
+					<span class="boton" onclick="mostrarOcultar()">Base de Datos</span>
+					<span class="boton" onclick="agregarNota()">+ Nota</span>
 				</div>
 			</div>
 
@@ -42,14 +54,13 @@
                 </label>  
                 <table id="tabla">
                     <thead>
-                        <th>apellido</th>
-                        <th>anombre</th>
-                        <th>DNI</th>
-						<th>direccion</th>
-                        <th>correo</th>
-                        <th>contraseña</th>
-                        <th>repetir</th>
-                        
+                        <th>ID</th>
+                        <th>Materia</th>
+                        <th>Docente</th>
+                        <th>Curso</th>
+                        <th>Horario</th>
+                        <th>Notas</th>
+                        <th>Promedio</th>
                     </thead>
                 </table>
             </div>
